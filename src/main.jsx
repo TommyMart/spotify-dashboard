@@ -4,14 +4,15 @@ import App from './App.jsx'
 import './index.css'
 import { ThemeContextProvider } from './contexts/ThemeContextProvider.jsx'
 import { SpotifyAuthProvider } from './contexts/SpotifyAuthProvider.jsx'
+import { SpotifyProfileProvider } from './contexts/SpotifyProfileProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeContextProvider>
       <SpotifyAuthProvider>
-        <SpotifyAuthProvider>
+        <SpotifyProfileProvider>
           <App />
-        </SpotifyAuthProvider>
+        </SpotifyProfileProvider>
       </SpotifyAuthProvider>
     </ThemeContextProvider>    
   </StrictMode>,
