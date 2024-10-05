@@ -9,7 +9,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeContextProvider>
       <SpotifyAuthProvider>
-        <App />
+        <SpotifyAuthProvider>
+          <App />
+        </SpotifyAuthProvider>
       </SpotifyAuthProvider>
     </ThemeContextProvider>    
   </StrictMode>,
